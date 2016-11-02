@@ -13,7 +13,7 @@ class Embedding(object):
         vec = self.http_client.word2vec(word)
         return vec
 
-    def get_glove(self):
+    def get_glove(self, word):
         vec = self.http_client.glove(word)
         return vec
 
