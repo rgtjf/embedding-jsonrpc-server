@@ -1,23 +1,12 @@
 # embedding-jsonrpc-server
-help to reduce the time to load word2vec or other embeddings
+help to reduce the time to load fasttext
 
 ## Ref
-- https://pypi.python.org/pypi/python-jsonrpc
+- http://json-rpc.readthedocs.io/en/latest/index.html
 
-## Pre-Requirement
-- jsonrpc
-
-  ```bash
-  $ pip install python-jsonrpc
-  ```
-- Word2Vec
-- GloVe
-  
-  ```
-  # server.py line 39, 40
-  w2v_file = 'PATH TO GoogleNews-vectors-negative300.bin'
-  glove_file = 'PATH TO glove.6B.100d.txt'
-  ```
+## Install
+- python 2/3
+- pip install -r requirements
 
 ## Server
 
@@ -28,5 +17,5 @@ $ python server.py
 ## Client
 
 ```
-$ python clint.py
+$ python client.py
 ```
